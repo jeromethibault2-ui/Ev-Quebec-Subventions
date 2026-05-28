@@ -1,0 +1,117 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PALETTE */
+:root {
+  --evqc-green: #8cd600;
+  --evqc-dark: #1a1a1a;
+  --evqc-light: #f5f5f5;
+  --evqc-border: #dddddd;
+}
+
+/* BASE */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #222222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* HEADER */
+header {
+  border-bottom: 1px solid var(--evqc-border);
+  background: #ffffff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--evqc-dark);
+}
+
+header nav a {
+  text-decoration: none;
+  color: #444;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: var(--evqc-green);
+}
+
+/* TITRES & SECTIONS */
+h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: var(--evqc-dark);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--evqc-dark);
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.section {
+  margin: 32px 0;
+}
+
+/* CARDS */
+.card {
+  border: 1px solid var(--evqc-border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background: #ffffff;
+  margin-bottom: 12px;
+}
+
+/* BOUTONS */
+.btn, button {
+  display: inline-block;
+  background: var(--evqc-green);
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover, button:hover {
+  filter: brightness(1.05);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 18px 0;
+  border-top: 1px solid var(--evqc-border);
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+}
