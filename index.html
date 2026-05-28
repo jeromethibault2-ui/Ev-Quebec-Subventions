@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil — Subventions VÉ Québec</title>
+    <title>Subventions VÉ Québec</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,9 +11,10 @@
 
 <header>
     <div class="container">
-        <nav>
-            <h2>EVQC Subventions</h2>
-            <div>
+        <nav class="nav">
+            <div class="logo">EVQC Subventions</div>
+
+            <div class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="subventions.html">Subventions</a>
                 <a href="bornes.html">Bornes</a>
@@ -25,43 +26,47 @@
     </div>
 </header>
 
-<div class="container">
+<main class="container">
 
-    <section class="section">
-        <h1>Subventions VÉ Québec</h1>
+    <!-- HERO -->
+    <section class="hero section">
+        <h1>Subventions pour bornes électriques au Québec</h1>
         <p>
-            Vérifiez votre admissibilité aux programmes Roulez Vert et Écorecharge, 
-            ou trouvez une borne et un électricien certifié pour votre installation.
+            Vérifiez votre admissibilité aux programmes Roulez Vert et Écocharge,
+            et trouvez une borne ainsi qu’un électricien certifié en quelques clics.
         </p>
-        <br>
-        <a class="btn" href="contact.html">Vérifier mon admissibilité</a>
+        <a class="btn btn-primary" href="contact.html">
+            Vérifier mon admissibilité
+        </a>
     </section>
 
-    <section class="section">
+    <!-- SUBVENTIONS -->
+    <section class="section card">
         <h2>Subventions disponibles</h2>
-        <p>Montants, critères et démarches pour obtenir vos remboursements.</p>
-        <br>
+        <p>Montants, critères et étapes pour obtenir vos remboursements.</p>
         <a class="btn" href="subventions.html">Voir les subventions</a>
     </section>
 
-    <section class="section">
+    <!-- BORNES -->
+    <section class="section card">
         <h2>Bornes approuvées</h2>
-        <p>Liste officielle des bornes admissibles au Québec.</p>
-        <br>
+        <p>Liste des bornes admissibles aux programmes du Québec.</p>
         <a class="btn" href="bornes.html">Voir les bornes</a>
     </section>
 
-    <section class="section">
+    <!-- ÉLECTRICIENS -->
+    <section class="section card">
         <h2>Électriciens certifiés</h2>
-        <p>Professionnels approuvés pour installer votre borne.</p>
-        <br>
+        <p>Professionnels qualifiés pour installer votre borne.</p>
         <a class="btn" href="electriciens.html">Trouver un électricien</a>
     </section>
 
-</div>
+</main>
 
 <footer>
-    © 2026 Subventions VÉ Québec — Tous droits réservés.
+    <div class="container footer">
+        © 2026 EVQC Subventions — Tous droits réservés
+    </div>
 </footer>
 
 </body>
