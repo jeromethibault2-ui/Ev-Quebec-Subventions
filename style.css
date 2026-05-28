@@ -1,0 +1,163 @@
+/* ------------------------------
+   RESET + BASE
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Inter", sans-serif;
+  background: #0f0f0f;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   COLORS EVQC
+--------------------------------*/
+:root {
+  --evqc-green: #8cd600;
+  --evqc-silver: #c0c0c0;
+  --evqc-dark: #1a1a1a;
+  --evqc-darker: #0f0f0f;
+}
+
+/* ------------------------------
+   LAYOUT
+--------------------------------*/
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+header {
+  background: var(--evqc-dark);
+  padding: 20px 0;
+  border-bottom: 2px solid var(--evqc-green);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: var(--evqc-silver);
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+header nav a:hover {
+  color: var(--evqc-green);
+}
+
+/* ------------------------------
+   TITRES
+--------------------------------*/
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: var(--evqc-green);
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--evqc-silver);
+}
+
+/* ------------------------------
+   SECTIONS
+--------------------------------*/
+.section {
+  margin: 60px 0;
+  padding: 40px;
+  background: #141414;
+  border: 1px solid #222;
+  border-radius: 12px;
+}
+
+/* ------------------------------
+   FORMULAIRES
+--------------------------------*/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input, textarea, select {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1c1c1c;
+  color: #fff;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--evqc-green);
+  outline: none;
+}
+
+/* ------------------------------
+   BOUTONS
+--------------------------------*/
+button, .btn {
+  background: var(--evqc-green);
+  color: #000;
+  padding: 16px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover, .btn:hover {
+  background: #a8ff00;
+}
+
+/* ------------------------------
+   CARDS
+--------------------------------*/
+.card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border-color: var(--evqc-green);
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  background: #0c0c0c;
+  text-align: center;
+  color: var(--evqc-silver);
+  border-top: 2px solid var(--evqc-green);
+}
